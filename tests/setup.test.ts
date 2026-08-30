@@ -1,4 +1,5 @@
 describe('Jest + TypeScript pipeline', () => {
+
   test('adds 1 + 2 to equal 3', () => {
     expect(1 + 2).toBe(3);
   });
@@ -14,4 +15,5 @@ describe('Jest + TypeScript pipeline', () => {
     expect(mockFn).toHaveBeenCalledWith(5);
     expect(mockFn).toHaveReturnedWith(10);
   });
+
 });
