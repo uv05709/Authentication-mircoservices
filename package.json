@@ -4,11 +4,19 @@
   "description": "This is the auth service for all the project of t4tier3",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "author": "Saurabh Yadav",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^7.0.2"
+    "@types/node": "^26.4.0",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
+    "eslint": "^9.9.1",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.9.0",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.68.0"
   }
 }
