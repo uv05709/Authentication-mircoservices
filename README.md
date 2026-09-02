@@ -43,3 +43,34 @@ cd Authentication-mircoservices
 ```bash
 npm install
 ```
+
+### 3. Set up environment variables
+
+Copy the example environment file and fill in your values:
+
+```bash
+cp .env.example .env
+```
+
+Open `.env` and update the following required values:
+
+| Variable | Description |
+|---|---|
+| `DATABASE_URL` | PostgreSQL connection string |
+| `JWT_ACCESS_SECRET` | Secret for signing access tokens (min 32 chars) |
+| `JWT_REFRESH_SECRET` | Secret for signing refresh tokens (min 32 chars) |
+| `PORT` | Port the server listens on (default: 3000) |
+
+> ⚠️ Never commit your `.env` file — it is already in `.gitignore`
+
+### 4. Set up the database
+
+```bash
+npx prisma migrate dev
+```
+
+### 5. Start the server
+
+```bash
+npm run dev
+```
